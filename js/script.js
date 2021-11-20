@@ -1,23 +1,35 @@
 'use strict';
 
-const nubmer0fFilms = +prompt('Skolko filmov vi uje glyanuli?');
+if (4 == 9) {
+    console.log('ok!');
+} else {
+    console.log('dont ok!');
+}
 
-console.log(nubmer0fFilms);
 
-const personalMovieDB = {
-    count: nubmer0fFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
 
-const a = prompt('Odin iz poslednih filmov?', ''),
-      b = prompt('Na skolko ocenite ego?', ''),
-      c = prompt('Odin iz poslednih filmov?', ''),
-      d = prompt('Na skolko ocenite ego?', '');
+// if (num < 49) {
+//     console.log('Error');
+// } else if (num > 100) {
+//     console.log('Mnogo');
+// } else {
+//     console.log('ok!!');
+// }
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[c] = d;
+// (num == 50) ? console.log('ok!!') : console.log('Error');
+const num = 50;
 
-console.log(personalMovieDB);
+switch (num) {
+    case '49':
+        console.log('Neverno');
+        break;
+    case '100':
+        console.log('Neverno');
+        break;
+    case '50':
+        console.log('V tochky');
+        break;
+    default:
+        console.log('Ne v etot raz');
+        break;
+}
