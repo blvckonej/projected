@@ -1,38 +1,29 @@
 "use strict";
 
-const nubmer0fFilms = +prompt("Skolko filmov vi uje glyanuli?");
+let num = 20;
 
-console.log(nubmer0fFilms);
-
-const personalMovieDB = {
-  count: nubmer0fFilms,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false,
-};
-
-for (let i = 0; i < 2; i++) {
-  const a = prompt("Odin iz poslednih filmov?", ""),
-    b = prompt("Na skolko ocenite ego?", "");
-
-  if (a != null && b != null && a != "" && b != "" && a.length < 50) {
-    personalMovieDB.movies[a] = b;
-    console.log("Done!");
-  } else {
-    console.log("error");
-    i--;
-  }
+function showFirstMessage(text) {
+    console.log(text);
+    num = 10;
 }
 
-if (personalMovieDB.count < 10) {
-  console.log("Malo filmov");
-} else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-  console.log("Classical zritel");
-} else if (personalMovieDB.count >= 30) {
-  console.log("vi kinoman");
-} else {
-  console.log("Error!");
+showFirstMessage('Hello World!');
+console.log(num);
+
+function calc(a, b) {
+    return (a + b);
 }
 
-console.log(personalMovieDB);
+console.log(calc(4, 3));
+console.log(calc(5, 6));
+console.log(calc(10, 20));
+console.log(calc(3, 13));
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+const anotherNum = ret();
+
+console.log(anotherNum);
